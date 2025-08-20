@@ -1,5 +1,23 @@
-.hero_banner_primary img {
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hero_banner_primary {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 60vh;
+  overflow: hidden;
+}
+.hero_banner_primary img {
+  height: 100%;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
 }
 .hero_banner_primary .hero_banner_primary__buton {
   border-color: hotpink;
@@ -16,4 +34,29 @@
   font-size: 25px;
   background-color: hotpink;
   color: white;
+}
+
+.hero_banner_primary__call_to_action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  gap: 5px;
+  transform: translate(-50%, -50%);
+}
+
+.Carrousel_primary {
+  width: 40vh;
+  margin: auto;
+}
+.Carrousel_primary img {
+  height: 40vh;
+}
+
+.Product_grid_primary {
+  display: grid;
+  grid-row: 4;
+  grid-column: 4;
 }/*# sourceMappingURL=style.css.map */
