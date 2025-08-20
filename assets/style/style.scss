@@ -1,4 +1,3 @@
-
 @mixin bordure($border_color,$border_size,$border_radius){
     border-color: $border_color;
     border:$border_size solid ;
@@ -11,8 +10,18 @@
 }
 
 .hero_banner_primary{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    overflow: hidden;
+    
     img{
-        height: 60vh;
+        height: 100%;
+        width:auto;
+        object-fit: cover;
+        display: block
     }
     .hero_banner_primary__buton{
     @include bordure(hotpink,3px,12px);
@@ -23,4 +32,24 @@
     }
 }
 }
-.hero_banner_primary__call_to_action
+
+.hero_banner_primary__call_to_action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    gap: 5px;
+    transform: translate(-50%,-50%);
+
+    
+}
+.Carrousel_primary {
+    width: 40vh;
+    margin: auto;
+    img {
+        height: 40vh;
+        
+    }
+}

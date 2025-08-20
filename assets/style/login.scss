@@ -1,0 +1,21 @@
+$colordefault: rgb(179, 255, 0);
+$colorinput: rgb(14, 27, 146);
+$colorbtn: black;
+
+
+form {
+    .label {
+        color: $colordefault
+    }
+    input {
+        color: $colorinput
+    }
+}  
+@mixin bordurelogin($couler, $largeur: 1px) {
+    border: $largeur dotted $colorbtn;
+    border-radius: 10px;
+}
+
+.btn {
+    @include bordurelogin(rgb(197, 27, 55))
+}
