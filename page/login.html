@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clothes4Geeks-Login</title>
-    <link href="../assets/style/login.css" rel="stylesheet">
+    <link href="/assets/style/login.css" rel="stylesheet">
 </head>
 <body>
-    <h1>S'identifier</h1>
+    <header>
+        <h1>S'identifier</h1>
+    </header>
+    <main>
     <form>
-        <div class="label">
-            <label for="email">Email</label>
+        <div>
+            <label for ="email">Email</label>
             <input type="email" id="email">
         </div>
-        <div class="label">
+        <div>
             <label for="password">Mot de passe</label>
             <input type="password" id="password">
         </div>
@@ -22,8 +25,9 @@
             <label for="checkbox" for="checkbox">Se souvenir de moi</label>
         </div>
     </form>
-    <button class="btn">Se connecter</button>
+    <a class="btn-login" href="">Se connecter</a>
     <p>Pas encore de compte?
-    <a href="registrer.html">S'inscrire</a></p>
+    <a class="register__active" href="registrer.html">S'inscrire</a></p>
+    </main>
 </body>
 </html>

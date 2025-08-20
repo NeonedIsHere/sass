@@ -1,21 +1,36 @@
-$colordefault: rgb(179, 255, 0);
-$colorinput: rgb(14, 27, 146);
-$colorbtn: black;
-
-
-form {
-    .label {
-        color: $colordefault
-    }
-    input {
-        color: $colorinput
-    }
-}  
-@mixin bordurelogin($couler, $largeur: 1px) {
-    border: $largeur dotted $colorbtn;
-    border-radius: 10px;
+@mixin btn-login($color, $size: 1px) {
+    background-color: $color;
+    border: dotted;
+    border-radius: $size;
+    
+    
 }
 
-.btn {
-    @include bordurelogin(rgb(197, 27, 55))
+.btn-login {
+    @include btn-login(rgb(207, 104, 182),10px)
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+@mixin label-active($color) {
+    background-color: $color;
+}
+
+.register__active {
+    @include label__active(red)
+}
+
+@mixin input__active($color) {
+    background-color: rgb(230, 73, 99);
+}
+
+.input__active {
+    @include input__active(rgb(230, 73, 99))
 }
