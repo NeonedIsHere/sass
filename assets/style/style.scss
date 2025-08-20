@@ -9,12 +9,125 @@
     color: $label_color;
 }
 
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 32px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(255, 105, 180, 0.08);
+
+    .logo_header_primary {
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: hotpink;
+            margin-right: 32px;
+            text-decoration: none;
+        }
+    }
+
+    nav {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: space-between;
+
+        .nav_header_primary {
+            display: flex;
+            gap: 16px;
+            padding: 0;
+            margin: 0;
+
+            li {
+                list-style: none;
+                @include bordure(hotpink, 2px, 8px);
+                padding: 8px 18px;
+                transition: background 0.2s, color 0.2s, border-color 0.2s;
+
+                a {
+                    text-decoration: none;
+                    color: hotpink;
+                    font-weight: 500;
+                    font-size: 1rem;
+                }
+
+                &:hover {
+                    @include bouton(hotpink, white, 18px);
+                    border-color: white;
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .nav_header_secondary {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-left: auto;
+
+            button {
+                @include bouton(hotpink, white, 1rem);
+                @include bordure(hotpink, 2px, 8px);
+                padding: 8px 16px;
+                cursor: pointer;
+                transition: background 0.2s, color 0.2s, border-color 0.2s;
+
+                a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+
+                &:hover {
+                    @include bouton(white, hotpink, 1rem);
+                    border-color: hotpink;
+                }
+            }
+
+            form {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                input {
+                    padding: 8px 12px;
+                    border: 2px solid hotpink;
+                    border-radius: 4px;
+                    font-size: 1rem;
+                    color: hotpink;
+                }
+                button {
+                    @include bouton(hotpink, white, 1rem);
+                    @include bordure(hotpink, 2px, 8px);
+                    padding: 8px 16px;
+                    cursor: pointer;
+                    transition: background 0.2s, color 0.2s, border-color 0.2s;
+
+                    &:hover {
+                        @include bouton(white, hotpink, 1rem);
+                        border-color: hotpink;
+                    }
+                }
+            }
+        }
+    }
+}
+
 main {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 .hero_banner_primary{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    overflow: hidden;
+    
     position: relative;
     display: flex;
     justify-content: center;
@@ -46,7 +159,6 @@ main {
         @include bordure(white,3px,12px);
         @include bouton(hotpink,white,25px);
     }
-}
 }
 
 .hero_banner_primary__call_to_action {

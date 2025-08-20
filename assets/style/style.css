@@ -1,3 +1,110 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 32px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(255, 105, 180, 0.08);
+}
+header .logo_header_primary h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: hotpink;
+  margin-right: 32px;
+  text-decoration: none;
+}
+header nav {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .nav_header_primary {
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+header nav .nav_header_primary li {
+  list-style: none;
+  border-color: hotpink;
+  border: 2px solid;
+  border-radius: 8px;
+  padding: 8px 18px;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+header nav .nav_header_primary li a {
+  text-decoration: none;
+  color: hotpink;
+  font-weight: 500;
+  font-size: 1rem;
+}
+header nav .nav_header_primary li:hover {
+  font-size: 18px;
+  background-color: hotpink;
+  color: white;
+  border-color: white;
+}
+header nav .nav_header_primary li:hover a {
+  color: white;
+}
+header nav .nav_header_secondary {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: auto;
+}
+header nav .nav_header_secondary button {
+  font-size: 1rem;
+  background-color: hotpink;
+  color: white;
+  border-color: hotpink;
+  border: 2px solid;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+header nav .nav_header_secondary button a {
+  color: inherit;
+  text-decoration: none;
+}
+header nav .nav_header_secondary button:hover {
+  font-size: 1rem;
+  background-color: white;
+  color: hotpink;
+  border-color: hotpink;
+}
+header nav .nav_header_secondary form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+header nav .nav_header_secondary form input {
+  padding: 8px 12px;
+  border: 2px solid hotpink;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: hotpink;
+}
+header nav .nav_header_secondary form button {
+  font-size: 1rem;
+  background-color: hotpink;
+  color: white;
+  border-color: hotpink;
+  border: 2px solid;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+header nav .nav_header_secondary form button:hover {
+  font-size: 1rem;
+  background-color: white;
+  color: hotpink;
+  border-color: hotpink;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -5,6 +112,12 @@ main {
 }
 
 .hero_banner_primary {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  overflow: hidden;
   position: relative;
   display: flex;
   justify-content: center;
@@ -20,8 +133,7 @@ main {
   display: block;
   height: 100%;
   width: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
 }
 .hero_banner_primary .hero_banner_primary__buton {
@@ -40,8 +152,7 @@ main {
   background-color: hotpink;
   color: white;
 }
-
-.hero_banner_primary__call_to_action {
+.hero_banner_primary .hero_banner_primary__call_to_action {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,51 +162,26 @@ main {
   gap: 5px;
   transform: translate(-50%, -50%);
 }
-
-.Carrousel_primary {
+.hero_banner_primary .Carrousel_primary {
   width: 40vh;
   margin: auto;
 }
-.Carrousel_primary img {
+.hero_banner_primary .Carrousel_primary img {
   height: 40vh;
 }
-
-.Product_grid_primary {
-  width: 80;
-  margin: auto;
+.hero_banner_primary .Product_grid_primary {
   display: grid;
   grid-row: 4;
   grid-column: 4;
 }
-
-.Product_grid_primary__product_card {
-  height: 240px;
-  width: 150px;
+.hero_banner_primary .Product_grid_primary__product_card {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  border: 2px solid;
   border-color: hotpink;
+  border: 2px solid;
   border-radius: 5px;
 }
-.Product_grid_primary__product_card .Product_grid_primary__product_card__title {
-  top: 5px;
-  height: 25px;
-  width: 100%;
-  border-bottom: 2px solid black;
-  text-align: center;
-}
-.Product_grid_primary__product_card img {
-  height: 190px;
-}
-.Product_grid_primary__product_card h4 {
-  margin: 5px;
-}
-.Product_grid_primary__product_card .Product_grid_primary__product_card__price {
-  border-top: 2px solid black;
-  width: 100%;
-  height: 25px;
-  text-align: center;
-  margin-top: auto;
+.hero_banner_primary .Product_grid_primary__product_card img {
+  height: 60px;
+  width: 40px;
 }/*# sourceMappingURL=style.css.map */
