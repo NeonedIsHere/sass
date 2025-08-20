@@ -59,4 +59,13 @@ main {
   display: grid;
   grid-row: 4;
   grid-column: 4;
+}
+
+.Product_grid_primary__product_card {
+  display: flex;
+  flex-direction: column;
+}
+.Product_grid_primary__product_card img {
+  height: 60px;
+  width: 40px;
 }/*# sourceMappingURL=style.css.map */
