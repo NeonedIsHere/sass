@@ -53,4 +53,10 @@ main {
 }
 .Carrousel_primary img {
   height: 40vh;
+}
+
+.Product_grid_primary {
+  display: grid;
+  grid-row: 4;
+  grid-column: 4;
 }/*# sourceMappingURL=style.css.map */
