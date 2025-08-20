@@ -7,8 +7,16 @@
 }
 
 .btn-login {
-    @include btn-login(rgb(207, 104, 182),10px)
+    @include btn-login(rgb(207, 104, 182),10px);
+    margin: 20px;
+    &:active{
+        background-color: blue;
+    }
 }
+
+
+
+
 
 main {
     display: flex;
@@ -19,18 +27,14 @@ main {
 h1 {
     text-align: center;
 }
-@mixin label-active($color) {
+
+@mixin register__active($color) {
     background-color: $color;
 }
 
 .register__active {
-    @include label__active(red)
+    @include register__active(pink)
 }
 
-@mixin input__active($color) {
-    background-color: rgb(230, 73, 99);
-}
 
-.input__active {
-    @include input__active(rgb(230, 73, 99))
-}
+
