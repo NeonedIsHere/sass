@@ -65,5 +65,12 @@ main {
     grid-column: 4;
 }
 .Product_grid_primary__product_card{
-    
+    display: flex;
+    flex-direction: column;
+    @include bordure(hotpink, , )
+
+    img{
+        height: 60px;
+        width: 40px;
+    }
 }
