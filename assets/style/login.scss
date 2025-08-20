@@ -1,0 +1,36 @@
+@mixin btn-login($color, $size: 1px) {
+    background-color: $color;
+    border: dotted;
+    border-radius: $size;
+    
+    
+}
+
+.btn-login {
+    @include btn-login(rgb(207, 104, 182),10px)
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+@mixin label-active($color) {
+    background-color: $color;
+}
+
+.register__active {
+    @include label__active(red)
+}
+
+@mixin input__active($color) {
+    background-color: rgb(230, 73, 99);
+}
+
+.input__active {
+    @include input__active(rgb(230, 73, 99))
+}

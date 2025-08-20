@@ -18,6 +18,11 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+  height: 100%;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
 }
 .hero_banner_primary .hero_banner_primary__buton {
   border-color: hotpink;
