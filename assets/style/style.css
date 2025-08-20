@@ -1,1 +1,19 @@
-/*# sourceMappingURL=style.css.map */
+.hero_banner_primary img {
+  height: 60vh;
+}
+.hero_banner_primary .hero_banner_primary__buton {
+  border-color: hotpink;
+  border: 3px solid;
+  border-radius: 12px;
+  font-size: 25px;
+  background-color: white;
+  color: hotpink;
+}
+.hero_banner_primary .hero_banner_primary__buton:hover {
+  border-color: white;
+  border: 3px solid;
+  border-radius: 12px;
+  font-size: 25px;
+  background-color: hotpink;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

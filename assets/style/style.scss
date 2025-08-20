@@ -1,6 +1,25 @@
 
-
+@mixin bordure($border_color,$border_size,$border_radius){
+    border-color: $border_color;
+    border:$border_size solid ;
+    border-radius: $border_radius;
+}
+@mixin bouton($bg_color,$label_color,$label_size ){
+    font-size: $label_size;
+    background-color: $bg_color;
+    color: $label_color;
+}
 
 .hero_banner_primary{
-    
+    img{
+        height: 60vh;
+    }
+    .hero_banner_primary__buton{
+    @include bordure(hotpink,3px,12px);
+    @include bouton(white,hotpink,25px);
+    &:hover{
+        @include bordure(white,3px,12px);
+        @include bouton(hotpink,white,25px);
+    }
+}
 }
